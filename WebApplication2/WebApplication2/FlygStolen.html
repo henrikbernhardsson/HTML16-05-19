@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Flights</title>
+    <meta charset="utf-8" />
+    <style>
+        header {
+            background-color: hotpink;
+        }
+        body{
+            background-color: #808080
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Search Flights</h1>
+    </header>
+
+    <form>
+        From:
+        <input type="text" name="TravelFrom" list="FromInput" autofocus>
+        <datalist id="FromInput">
+            <option>Malmö Airport</option>
+            <option>Ängelholm Airport</option>
+            <option>Arlanda Airport</option>
+            <option>Göteborg Airport</option>
+            <option>Vetlanda Airport</option>
+        </datalist>
+        <br />
+        Destination:
+        <input type="text" name="Destination" list="DestInput">
+        <datalist id="DestInput">
+            <option>Barcelona Airport</option>
+            <option>Madrid Airport</option>
+            <option>Roma Airport</option>
+            <option>Oslo Airport</option>
+            <option>Copenhagen Airport</option>
+        </datalist>
+        <br />
+        Travelling Company:
+        <select name="TravCompany">
+            <option>Berlin Air</option>
+            <option>SAS</option>
+            <option>Jet Airways</option>
+            <option>KLM</option>
+            <option>Baltic Airways</option>
+        </select>
+        <br />
+        Travel Date:
+        <input type="date" name="TravelDate" />
+        Time of travel to destination:
+        <select name="TimeTravel">
+            <option>09.00</option>
+            <option>11.00</option>
+            <option>15.00</option>
+            <option>19.00</option>
+            <option>22.00</option>
+        </select>
+        <br />
+        Return Date:
+        <input type="date" name="ReturnDate" />
+        Time of travel home:
+        <select name="TimeReturn">
+            <option>10.00</option>
+            <option>12.00</option>
+            <option>16.00</option>
+            <option>20.00</option>
+            <option>23.00</option>
+        </select>
+        <br />
+        Number of adults:
+        <select name="NumberOfAdults">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+        </select>
+        Number of children:
+        <select name="NumberOfChild">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+        </select> <br />
+        <select name="TravelClass">
+            <option>Economy</option>
+            <option>Business</option>
+            <option>Premium Class</option>
+        </select><br />
+        <input type="checkbox" name="DirFliht" /> Direct Flight<br />
+        <input type="submit" value="Search" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        body{
+            background-color:#8080FF
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Input of plenty</h1>
+        Aggresiv kanins namn:
+        <input type="text" name="name" placeholder="Förnamn" autofocus required/> <br />
+        <!--Password-->
+        Password:
+        <input type="password" name="Password" placeholder="Password" maxlength="16" required/> <br />
+        <!--Check Box-->
+        Vilka färger gillar du?<br />
+        <input type="checkbox" name="Farg" value="Lila"/> Lila<br />
+        <input type="checkbox" checked name="farg" value="Rosa"/> Rosa<br /> <!--Checked = I checkad redan från början-->
+        <input type="checkbox" name="farg" value="Gron"/> Grön<br />
+        <!--Radio Button-->
+        Gender:<br />
+        <input type="radio" name="Gender" value="male" /> Male<br />
+        <input type="radio" name="Gender" value="female" /> Female<br /> <!--Samma name="" Så hör de ihop med varandra-->
+        <input type="radio" name="Gender" value="Android" disabled /> Android<br />
+        <input type="file" name="picture" placeholder="Bildfil" /> <br />
+        <!--Datalist input-->
+        <input type="text" name="sex" list="list-input" />
+        <datalist id="list-input">
+            <option label="male" value="male"></option>
+            <option label="female" value="female"></option>
+            <option label="transmale" value="transmale"></option>
+
+        </datalist><br />
+        <!--En Datalist med bilar-->
+        <input name="Carmodel" list="cars" />
+        <datalist id="cars">
+            <option value="Audi">Audibil</option>
+            <option value="BMW">Dålig bilförare</option>
+            <option value="Honda">Awesome car</option>
+            <option value="Volvo">Crappy car</option>
+        </datalist><br />
+        <!--Drop-Down med kategorier-->
+        <select name="drop">
+            <optgroup label="Bilar">
+            <option>Audi</option>
+            <option>BMW</option>
+            <option>Ferrari</option>
+            <option>McLaren</option>
+            <option>Honda</option>
+            <option>Toyota</option>
+            </optgroup>
+            <optgroup label="Motorcyklar">
+                <option>Yamaha</option>
+                <option>Honda</option>
+            </optgroup>
+        </select>
+        <input type="submit" />
+
+    </form>
+</body>
+</html>
